@@ -36,22 +36,22 @@
 
 ---
 ## Explicação classes
-- **class Banco**
+- **class Banco**: 
   A **classe Banco** foi criadapara gerenciar clientes e contas do sistema. Ela mantém listas de clientes e contas, permitindo cadastrar, localizar e controlar operações bancárias. Representa     uma agregação, pois os clientes podem existir fora do banco.
 
-- **class Cliente**
+- **class Cliente**: 
   A **classe Cliente** foi criada para armazenar informações pessoais do cliente, como nome, CPF e contatos. Cada cliente pode possuir uma ou mais contas, estabelecendo uma associação com a       classe Conta. Facilita o gerenciamento das contas vinculadas ao cliente.
 
-- **class OperacoesFinanceiras**
+- **class OperacoesFinanceiras**: 
   A **classe OperacoesFinanceiras** foi criada como uma interface (ou contrato) para definir métodos obrigatórios relacionados a operações financeiras, como depositar(), sacar() e                 transferir().   Isso garante padronização entre diferentes tipos de conta.
 
-- **class Conta**
+- **class Conta**: 
   A **classe Conta** foi criada como classe base abstrata, representando o comportamento comum de todas as contas. Contém atributos como número da conta, saldo e cliente associado, além de        métodos genéricos como depósito, saque e transferência. Não pode ser instanciada diretamente, promovendo abstração e reutilização de código.
 
-- **class ContaCorrente(Conta)**
+- **class ContaCorrente(Conta)**: 
   A **classe ContaCorrente** herda de Conta e representa contas correntes. Permite saques sem saldo mínimo, reimplementando o método sacar() da classe base. Demonstra o uso de herança e           polimorfismo, pois aproveita métodos comuns, mas ajusta comportamentos específicos.
 
-- **class ContaPoupanca(Conta)**
+- **class ContaPoupanca(Conta)**: 
   A **classe ContaPoupanca** herda de Conta e representa contas poupança. Possui regra de saldo mínimo (R$ 100,00) para saques, reimplementando o método sacar() com comportamento diferente da     conta corrente. Demonstra polimorfismo e garante maior controle financeiro.
 
 ---
