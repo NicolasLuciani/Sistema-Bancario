@@ -821,6 +821,6 @@ gerente_cliente()
 
 ---
 # Diagrama de classes
-<a href="https://miro.com/app/board/uXjVJ3dcNDI=/">Link diagrama de classes</a>
+<a href="https://miro.com/app/board/uXjVJ3dcNDI=/">Diagrama de classes</a>
 
 
