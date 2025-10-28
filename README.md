@@ -32,14 +32,7 @@
     - def consulta_saldo_extrato()
  
 - app.py
-```python
-  - from time import sleep
-    import os
-    from funcoes import gerente_cliente
-    from classes import *
-    print("===SEJA BEM VINDO!===")
     gerente_cliente()
-```
 
 ---
 ## Explicação classes
