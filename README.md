@@ -35,7 +35,7 @@
   - gerente_cliente()
 
 ---
-## Explicação classes
+## Explicação classes.py
 - **class Banco**: 
   A **classe Banco** foi criadapara gerenciar clientes e contas do sistema. Ela mantém listas de clientes e contas, permitindo cadastrar, localizar e controlar operações bancárias. Representa     uma agregação, pois os clientes podem existir fora do banco.
 
@@ -55,7 +55,7 @@
   A **classe ContaPoupanca** herda de Conta e representa contas poupança. Possui regra de saldo mínimo (R$ 100,00) para saques, reimplementando o método sacar() com comportamento diferente da     conta corrente. Demonstra polimorfismo e garante maior controle financeiro.
 
 ---
-## Explicação classes
+## Explicação funcoes.py
 - **def gerente_cliente()**  
   Exibe o menu inicial do sistema, permitindo escolher entre acesso de gerente ou cliente.
 
