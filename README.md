@@ -32,7 +32,7 @@
     - def consulta_saldo_extrato()
  
 - app.py
-    gerente_cliente()
+  - gerente_cliente()
 
 ---
 ## Explicação classes
