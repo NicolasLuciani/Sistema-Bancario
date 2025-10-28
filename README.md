@@ -421,7 +421,7 @@ def gerenciar_clientes():
 ```
 
 
-<p>Na função gerenciar_clientes, você está em um menu que pode listar ou excluir os clientes.</p>
+<p> - Na função gerenciar_clientes, você está em um menu que pode listar ou excluir os clientes.</p>
 
 
 
@@ -447,7 +447,7 @@ def gerenciar_contas():
 ```
 
 
-<p>Em gerenciar_contas, o gerente pode listar as contas ou ver se elas estão ativas.</p>
+<p> - Em gerenciar_contas, o gerente pode listar as contas ou ver se elas estão ativas.</p>
 
 
 ```python
@@ -474,7 +474,7 @@ def login_ou_cadastro_cliente():
 ```
 
 
-<p>Em login_ou_cadastro_cliente, o usuário decide ou logar ou cadastrar.</p>
+<p> - Em login_ou_cadastro_cliente, o usuário decide ou logar ou cadastrar.</p>
 
 
 
@@ -495,7 +495,7 @@ def login_cliente():
 ```
 
 
-<p>Aqui no login, você coloca seu nome e cpf, e verificar se exsite essa conta ou não.</p>
+<p> - Aqui no login, você coloca seu nome e cpf, e verificar se exsite essa conta ou não.</p>
 
 
 
@@ -547,7 +547,7 @@ def cadastro_cliente():
 ```
 
 
-<p>Em cadastrar, você coloca seu nome, cpf, idade e genero, e com verificações, então, caso o cpf possua um número diferente de 11 ele da erro.</p>
+<p> - Em cadastrar, você coloca seu nome, cpf, idade e genero, e com verificações, então, caso o cpf possua um número diferente de 11 ele da erro.</p>
 
 
 
@@ -580,7 +580,7 @@ def criar_conta(cliente):
 ```
 
 
-<p>Define se é conta corrente ou punpança</p>
+<p - >Define se é conta corrente ou punpança</p>
 
 
 ```python
@@ -596,7 +596,7 @@ def listar_clientes():
 ```
 
 
-<p>Lista os clientes</p>
+<p> - Lista os clientes</p>
 
 
 
@@ -615,7 +615,7 @@ def excluir_cliente():
 ```
 
 
-<p>Excluir clientes</p>
+<p> - Excluir clientes</p>
 
 
 
@@ -632,7 +632,7 @@ def listar_contas():
 ```
 
 
-<p>Listar as contas</p>
+<p> - Listar as contas</p>
 
 
 ```python
@@ -653,7 +653,7 @@ def verificar_conta():
 ```
 
 
-<p>Verifica se a conta esta ativa ou não.</p>
+<p> - Verifica se a conta esta ativa ou não.</p>
 
 
 ```python
@@ -686,17 +686,21 @@ def menu_cliente(cliente):
         except Exception as e:
             print(f"Houve um erro {e}")
             os.system("pause")
-
-
-def getContaCliente(cliente):
-    os.system("cls")
-    for c in contas:
-        if c.getCliente() == cliente:
-            return c # procura de clientes
-    print("Nenhuma conta foi encontrada")
-    return None
 ```
-<p>Menu para o cliebte escolher se vai depositar, sacar dinheiro,  tranferir dinheiro ou ver seu extrato. </p>
+<p> - Menu para o cliebte escolher se vai depositar, sacar dinheiro,  tranferir dinheiro ou ver seu extrato. </p>
+
+
+```python
+    def getContaCliente(cliente):
+        os.system("cls")
+        for c in contas:
+            if c.getCliente() == cliente:
+                return c 
+        print("Nenhuma conta foi encontrada")
+        return None
+```
+
+<p>Pesquisa os clientes que necessita</p>
 
 
 ```python
@@ -717,7 +721,7 @@ def deposito(cliente):
         print("Essa conta não está ativa!")
         os.system("pause")
 ```
-<p>Primeiro esta função verifica se a conta esta ativa, caso estiver, o cliente deposita um valor.</p>
+<p> - Primeiro esta função verifica se a conta esta ativa, caso estiver, o cliente deposita um valor.</p>
 
 
 ```python 
@@ -739,7 +743,7 @@ def saque(cliente):
         print("Essa conta não está ativa!")
         os.system("pause")
 ```
-<p>Primeiro esta função verifica se a conta esta ativa, caso estiver, o cliente vai escolher um valor para sacar.</p>
+<p> - Primeiro esta função verifica se a conta esta ativa, caso estiver, o cliente vai escolher um valor para sacar.</p>
 
 
 ```python
@@ -783,7 +787,7 @@ def transferencia(cliente):
         print("Valor inválido.")
         os.system("pause")
 ```
-<p>Nesta função será feito uma transferência,  logo precisa de um conta origem e um destino, caso uma das contas nãoestiver ativa, haveráum erro, se não o usuário precisa digitar o cpf para que ache a conta destinada, para trasferir o valor</p>
+<p> - Nesta função será feito uma transferência,  logo precisa de um conta origem e um destino, caso uma das contas nãoestiver ativa, haveráum erro, se não o usuário precisa digitar o cpf para que ache a conta destinada, para trasferir o valor</p>
 
 
 ```python 
@@ -800,7 +804,7 @@ def consulta_extrato(cliente):
 ```
 
 
-<p>Nesta ultima função, vemos o extrato, com o mesmo procedimento,  caso a conta estiver desativada, ira aparecer um erro, senão ira mostrar o extrato do cliente (caso houver).</p>
+<p> - Nesta ultima função, vemos o extrato, com o mesmo procedimento,  caso a conta estiver desativada, ira aparecer um erro, senão ira mostrar o extrato do cliente (caso houver).</p>
 
 
 
@@ -815,5 +819,8 @@ gerente_cliente()
 
 <p>Inicialização do código, importando as funções</p>
 
+---
+# Diagrama de classes
+<a href="https://miro.com/app/board/uXjVJ3dcNDI=/">Link diagrama de classes</a>
 
-https://miro.com/app/board/uXjVJ3dcNDI=/
+
